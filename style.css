@@ -1,0 +1,151 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f2f5;
+    color: #333;
+}
+
+.container {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 90%;
+    max-width: 450px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #007bff;
+}
+
+#display {
+    font-size: 3.5rem;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #e9ecef;
+    padding: 1rem;
+    border-radius: 5px;
+    margin-bottom: 1.5rem;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 1.5rem;
+}
+
+button {
+    font-size: 1rem;
+    padding: 0.75rem 1.25rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+#startBtn {
+    background-color: #28a745;
+    color: white;
+}
+
+#startBtn:hover {
+    background-color: #218838;
+}
+
+#pauseBtn {
+    background-color: #ffc107;
+    color: #333;
+}
+
+#pauseBtn:hover {
+    background-color: #e0a800;
+}
+
+#restartBtn {
+    background-color: #6c757d;
+    color: white;
+}
+
+#restartBtn:hover {
+    background-color: #5a6268;
+}
+
+#lapBtn {
+    background-color: #007bff;
+    color: white;
+}
+
+#lapBtn:hover {
+    background-color: #0069d9;
+}
+
+#resetLapsBtn {
+    background-color: #17a2b8;
+    color: white;
+}
+
+#resetLapsBtn:hover {
+    background-color: #138496;
+}
+
+#resetBtn {
+    background-color: #dc3545;
+    color: white;
+}
+
+#resetBtn:hover {
+    background-color: #c82333;
+}
+
+.laps-container {
+    margin-top: 1.5rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: #6c757d;
+    border-bottom: 2px solid #e9ecef;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+#laps {
+    list-style-type: none;
+    padding: 0;
+    max-height: 200px;
+    overflow-y: auto;
+    text-align: left;
+}
+
+#laps li {
+    background-color: #f8f9fa;
+    margin-bottom: 0.5rem;
+    padding: 0.75rem;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+@media (max-width: 500px) {
+    .buttons {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    button {
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+}
